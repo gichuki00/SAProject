@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Browse our collection of delicious recipes from around the world" />
+    <title>Recipes - Recipe Finder</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-utensils"></i>
+                <span>Recipe Finder</span>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="recipes.html" class="nav-link active">Recipes</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-outline">Sign In</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>All Recipes</h1>
+                <p>Discover delicious recipes from around the world</p>
+            </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="search-filter">
+            <div class="container">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search recipes by name, ingredient, or cuisine...">
+                    <button class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div class="filter-container">
+                    <button class="filter-pill active">All</button>
+                    <button class="filter-pill">Breakfast</button>
+                    <button class="filter-pill">Lunch</button>
+                    <button class="filter-pill">Dinner</button>
+                    <button class="filter-pill">Dessert</button>
+                    <button class="filter-pill">Vegan</button>
+                    <button class="filter-pill">Keto</button>
+                    <button class="filter-pill">Quick</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipes Grid -->
+        <section class="recipes-section">
+            <div class="container">
+                <div class="recipes-grid">
+                    <!-- Recipe Card 1 -->
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Classic Margherita Pizza">
+                            <div class="recipe-badge">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Classic Margherita Pizza</h3>
+                            <div class="recipe-meta">
+                                <span class="recipe-category">Italian</span>
+                                <span class="recipe-time">
+                                    <i class="fas fa-clock"></i> 45 min
+                                </span>
+                                <span class="recipe-difficulty">Easy</span>
+                            </div>
+                            <div class="recipe-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-value">4.5</span>
+                                <span class="rating-count">(128)</span>
+                            </div>
+                            <p class="recipe-description">Traditional Italian pizza with fresh mozzarella, tomatoes, and basil.</p>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 2 -->
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Fresh Garden Salad">
+                            <div class="recipe-badge">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Fresh Garden Salad</h3>
+                            <div class="recipe-meta">
+                                <span class="recipe-category">Healthy</span>
+                                <span class="recipe-time">
+                                    <i class="fas fa-clock"></i> 15 min
+                                </span>
+                                <span class="recipe-difficulty">Easy</span>
+                            </div>
+                            <div class="recipe-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">4.0</span>
+                                <span class="rating-count">(89)</span>
+                            </div>
+                            <p class="recipe-description">Crisp mixed greens with seasonal vegetables and homemade vinaigrette.</p>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 3 -->
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Chocolate Lava Cake">
+                            <div class="recipe-badge">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Chocolate Lava Cake</h3>
+                            <div class="recipe-meta">
+                                <span class="recipe-category">Dessert</span>
+                                <span class="recipe-time">
+                                    <i class="fas fa-clock"></i> 30 min
+                                </span>
+                                <span class="recipe-difficulty">Medium</span>
+                            </div>
+                            <div class="recipe-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-value">5.0</span>
+                                <span class="rating-count">(256)</span>
+                            </div>
+                            <p class="recipe-description">Decadent chocolate cake with a warm, gooey molten center.</p>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 4 -->
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Grilled Salmon">
+                            <div class="recipe-badge">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Grilled Salmon</h3>
+                            <div class="recipe-meta">
+                                <span class="recipe-category">Seafood</span>
+                                <span class="recipe-time">
+                                    <i class="fas fa-clock"></i> 25 min
+                                </span>
+                                <span class="recipe-difficulty">Medium</span>
+                            </div>
+                            <div class="recipe-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-value">4.7</span>
+                                <span class="rating-count">(167)</span>
+                            </div>
+                            <p class="recipe-description">Perfectly grilled salmon with lemon butter sauce and fresh herbs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 5 -->
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Vegetable Stir Fry">
+                            <div class="recipe-badge">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Vegetable Stir Fry</h3>
+                            <div class="recipe-meta">
+                                <span class="recipe-category">Vegan</span>
+                                <span class="recipe-time">
+                                    <i class="fas fa-clock"></i> 20 min
+                                </span>
+                                <span class="recipe-difficulty">Easy</span>
+                            </div>
+                            <div class="recipe-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-value">4.2</span>
+                                <span class="rating-count">(94)</span>
+                            </div>
+                            <p class="recipe-description">Colorful mixed vegetables stir-fried with ginger and garlic.</p>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 6 -->
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.pexels.com/photos/769969/pexels-photo-769969.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pancakes">
+                            <div class="recipe-badge">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Fluffy Pancakes</h3>
+                            <div class="recipe-meta">
+                                <span class="recipe-category">Breakfast</span>
+                                <span class="recipe-time">
+                                    <i class="fas fa-clock"></i> 15 min
+                                </span>
+                                <span class="recipe-difficulty">Easy</span>
+                            </div>
+                            <div class="recipe-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-value">4.6</span>
+                                <span class="rating-count">(203)</span>
+                            </div>
+                            <p class="recipe-description">Light and fluffy pancakes perfect for weekend breakfast.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="pagination-item">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#" class="pagination-item active">1</a>
+                    <a href="#" class="pagination-item">2</a>
+                    <a href="#" class="pagination-item">3</a>
+                    <a href="#" class="pagination-item">4</a>
+                    <a href="#" class="pagination-item">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <h3>RecipeFinder</h3>
+                        <p>Discover delicious recipes from around the world. Cook with love and share your culinary creations with our community.</p>
+                        <div class="social-links">
+                            <button type="button" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button type="button" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button type="button" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                            <button type="button" class="social-link" aria-label="Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </button>
+                            <button type="button" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="recipes.html">Recipes</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-categories">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="#recipes?category=breakfast">Breakfast</a></li>
+                            <li><a href="#recipes?category=lunch">Lunch</a></li>
+                            <li><a href="#recipes?category=dinner">Dinner</a></li>
+                            <li><a href="#recipes?category=dessert">Desserts</a></li>
+                            <li><a href="#recipes?category=vegan">Vegan</a></li>
+                            <li><a href="#recipes?category=keto">Keto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to our newsletter for the latest recipes and cooking tips!</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 RecipeFinder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

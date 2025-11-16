@@ -15,11 +15,11 @@ const Footer = () => {
               <h3>RecipeFinder</h3>
               <p>Discover delicious recipes from around the world. Cook with love and share your culinary creations with our community.</p>
               <div className="social-links">
-                <a href="#" aria-label="Facebook"><FaFacebook /></a>
-                <a href="#" aria-label="Twitter"><FaTwitter /></a>
-                <a href="#" aria-label="Instagram"><FaInstagram /></a>
-                <a href="#" aria-label="Pinterest"><FaPinterest /></a>
-                <a href="#" aria-label="YouTube"><FaYoutube /></a>
+                <button type="button" className="social-link" aria-label="Facebook" onClick={(e) => e.preventDefault()}><FaFacebook /></button>
+                <button type="button" className="social-link" aria-label="Twitter" onClick={(e) => e.preventDefault()}><FaTwitter /></button>
+                <button type="button" className="social-link" aria-label="Instagram" onClick={(e) => e.preventDefault()}><FaInstagram /></button>
+                <button type="button" className="social-link" aria-label="Pinterest" onClick={(e) => e.preventDefault()}><FaPinterest /></button>
+                <button type="button" className="social-link" aria-label="YouTube" onClick={(e) => e.preventDefault()}><FaYoutube /></button>
               </div>
             </div>
 

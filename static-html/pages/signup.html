@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Sign up for Recipe Finder to save recipes, create collections, and join our cooking community" />
+    <title>Sign Up - Recipe Finder</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-utensils"></i>
+                <span>Recipe Finder</span>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="recipes.html" class="nav-link">Recipes</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-outline">Sign In</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Create Your Account</h1>
+                <p>Join our community and start your culinary journey</p>
+            </div>
+        </section>
+
+        <!-- Signup Section -->
+        <section class="signup-section">
+            <div class="container">
+                <div class="signup-container">
+                    <!-- Signup Form -->
+                    <div class="signup-form-container">
+                        <div class="form-header">
+                            <h2>Sign Up</h2>
+                            <p>Fill in your details to get started</p>
+                        </div>
+                        
+                        <form class="signup-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <small class="form-help">We'll never share your email with anyone else.</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="username" class="form-label">Username *</label>
+                                <input type="text" id="username" name="username" class="form-input" required>
+                                <small class="form-help">Choose a unique username for your profile.</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password" class="form-label">Password *</label>
+                                <input type="password" id="password" name="password" class="form-input" required>
+                                <small class="form-help">Password must be at least 8 characters long.</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirmPassword" class="form-label">Confirm Password *</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dietaryPreferences" class="form-label">Dietary Preferences</label>
+                                <select id="dietaryPreferences" name="dietaryPreferences" class="form-input">
+                                    <option value="">Select your preferences</option>
+                                    <option value="none">No restrictions</option>
+                                    <option value="vegetarian">Vegetarian</option>
+                                    <option value="vegan">Vegan</option>
+                                    <option value="gluten-free">Gluten-free</option>
+                                    <option value="keto">Keto</option>
+                                    <option value="paleo">Paleo</option>
+                                    <option value="halal">Halal</option>
+                                    <option value="kosher">Kosher</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="skillLevel" class="form-label">Cooking Skill Level</label>
+                                <select id="skillLevel" name="skillLevel" class="form-input">
+                                    <option value="">Select your skill level</option>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                    <option value="expert">Expert</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                                    <span class="checkmark"></span>
+                                    I'd like to receive the weekly newsletter with recipes and cooking tips
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="terms" name="terms" class="form-checkbox" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="#terms" class="link">Terms of Service</a> and <a href="#privacy" class="link">Privacy Policy</a>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large btn-full">
+                                Create Account <i class="fas fa-user-plus"></i>
+                            </button>
+                        </form>
+                        
+                        <div class="form-footer">
+                            <p>Already have an account? <a href="#signin" class="link">Sign In</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Benefits Section -->
+                    <div class="signup-benefits">
+                        <h3>Why Join Recipe Finder?</h3>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-bookmark"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Save Your Favorites</h4>
+                                    <p>Build your personal recipe collection with dishes you love</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Join the Community</h4>
+                                    <p>Connect with fellow food lovers and share your cooking adventures</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Smart Shopping Lists</h4>
+                                    <p>Generate shopping lists automatically from your saved recipes</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Track Your Progress</h4>
+                                    <p>Monitor your cooking journey and improve your skills over time</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Access Anywhere</h4>
+                                    <p>Sync your recipes across all your devices for cooking on the go</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4>Rate & Review</h4>
+                                    <p>Share your thoughts and help others discover great recipes</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-signup">
+                            <h4>Or sign up with</h4>
+                            <div class="social-buttons">
+                                <button type="button" class="btn btn-outline btn-social">
+                                    <i class="fab fa-google"></i> Google
+                                </button>
+                                <button type="button" class="btn btn-outline btn-social">
+                                    <i class="fab fa-facebook-f"></i> Facebook
+                                </button>
+                                <button type="button" class="btn btn-outline btn-social">
+                                    <i class="fab fa-apple"></i> Apple
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <h3>RecipeFinder</h3>
+                        <p>Discover delicious recipes from around the world. Cook with love and share your culinary creations with our community.</p>
+                        <div class="social-links">
+                            <button type="button" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button type="button" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button type="button" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                            <button type="button" class="social-link" aria-label="Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </button>
+                            <button type="button" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="recipes.html">Recipes</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-categories">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="#recipes?category=breakfast">Breakfast</a></li>
+                            <li><a href="#recipes?category=lunch">Lunch</a></li>
+                            <li><a href="#recipes?category=dinner">Dinner</a></li>
+                            <li><a href="#recipes?category=dessert">Desserts</a></li>
+                            <li><a href="#recipes?category=vegan">Vegan</a></li>
+                            <li><a href="#recipes?category=keto">Keto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to our newsletter for the latest recipes and cooking tips!</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 RecipeFinder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

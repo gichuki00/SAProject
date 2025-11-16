@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUtensils, FaHeart, faHeart as farHeart, FaLeaf, FaUsers } from 'react-icons/fa';
+import { FaUtensils, FaHeart, FaLeaf, FaUsers } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {

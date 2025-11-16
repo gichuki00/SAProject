@@ -96,18 +96,10 @@ const Contact = () => {
               </div>
               
               <div className="social-links">
-                <a href="#" className="social-link" aria-label="Facebook">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" className="social-link" aria-label="Twitter">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="#" className="social-link" aria-label="Instagram">
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a href="#" className="social-link" aria-label="Pinterest">
-                  <i className="fab fa-pinterest-p"></i>
-                </a>
+                <button type="button" className="social-link" aria-label="Facebook" onClick={(e) => e.preventDefault()}><i className="fab fa-facebook-f"></i></button>
+                <button type="button" className="social-link" aria-label="Twitter" onClick={(e) => e.preventDefault()}><i className="fab fa-twitter"></i></button>
+                <button type="button" className="social-link" aria-label="Instagram" onClick={(e) => e.preventDefault()}><i className="fab fa-instagram"></i></button>
+                <button type="button" className="social-link" aria-label="Pinterest" onClick={(e) => e.preventDefault()}><i className="fab fa-pinterest-p"></i></button>
               </div>
             </div>
             

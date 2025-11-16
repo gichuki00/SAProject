@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Get in touch with the Recipe Finder team - we'd love to hear from you!" />
+    <title>Contact Us - Recipe Finder</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-utensils"></i>
+                <span>Recipe Finder</span>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="recipes.html" class="nav-link">Recipes</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-outline">Sign In</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you! Get in touch with our team.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select id="subject" name="subject" class="form-input" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="recipe">Recipe Question</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-input form-textarea" rows="6" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>hello@recipefinder.com</p>
+                                    <p>support@recipefinder.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Phone</h3>
+                                    <p>+1 (555) 123-4567</p>
+                                    <p>Mon-Fri, 9am-5pm EST</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Office</h3>
+                                    <p>123 Recipe Street</p>
+                                    <p>New York, NY 10001</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="social-section">
+                            <h3>Follow Us</h3>
+                            <p>Stay connected with our community on social media</p>
+                            <div class="social-links">
+                                <button type="button" class="social-link" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                                <button type="button" class="social-link" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button type="button" class="social-link" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </button>
+                                <button type="button" class="social-link" aria-label="Pinterest">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </button>
+                                <button type="button" class="social-link" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Link -->
+                        <div class="faq-section">
+                            <h3>Have a Question?</h3>
+                            <p>Check out our FAQ section for quick answers to common questions.</p>
+                            <a href="#faq" class="btn btn-outline">
+                                View FAQ <i class="fas fa-question-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers to common questions about Recipe Finder</p>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3 class="accordion-title">How do I submit my own recipes?</h3>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>We love featuring recipes from our community! To submit your recipe, sign up for an account and click the "Submit Recipe" button in your dashboard. Our team will review your submission and get back to you within 3-5 business days.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3 class="accordion-title">Can I save recipes for later?</h3>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes! Once you create an account, you can save any recipe to your personal collection by clicking the heart icon on recipe cards. You can organize your saved recipes into custom categories for easy access.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3 class="accordion-title">Are the recipes tested and reliable?</h3>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Absolutely! All recipes on Recipe Finder are tested by our team of professional chefs and home cooks. We provide detailed instructions, cooking times, and tips to ensure your dishes turn out perfectly every time.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3 class="accordion-title">Do you offer mobile apps?</h3>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes! Recipe Finder is available on both iOS and Android. Download our mobile app to access recipes offline, create shopping lists, and get notifications when new recipes are added.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3 class="accordion-title">How do I report an issue with a recipe?</h3>
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>If you encounter any issues with a recipe, please use the "Report Issue" button on the recipe page or contact us directly at support@recipefinder.com. We appreciate your feedback and will address any problems promptly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Visit Our Office</h2>
+                    <p>Stop by and say hello! We'd love to meet you in person.</p>
+                </div>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Interactive Map</p>
+                        <small>123 Recipe Street, New York, NY 10001</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <h3>RecipeFinder</h3>
+                        <p>Discover delicious recipes from around the world. Cook with love and share your culinary creations with our community.</p>
+                        <div class="social-links">
+                            <button type="button" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button type="button" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button type="button" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </button>
+                            <button type="button" class="social-link" aria-label="Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </button>
+                            <button type="button" class="social-link" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="recipes.html">Recipes</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-categories">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="#recipes?category=breakfast">Breakfast</a></li>
+                            <li><a href="#recipes?category=lunch">Lunch</a></li>
+                            <li><a href="#recipes?category=dinner">Dinner</a></li>
+                            <li><a href="#recipes?category=dessert">Desserts</a></li>
+                            <li><a href="#recipes?category=vegan">Vegan</a></li>
+                            <li><a href="#recipes?category=keto">Keto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to our newsletter for the latest recipes and cooking tips!</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 RecipeFinder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

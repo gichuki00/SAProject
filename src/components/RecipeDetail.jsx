@@ -116,18 +116,39 @@ const RecipeDetail = () => {
   }
 
   // Calculate ingredient quantities based on servings
+  const parseFraction = (fractionStr) => {
+    // Handle whole numbers
+    if (!fractionStr.includes('/')) {
+      return parseFloat(fractionStr);
+    }
+    
+    // Handle simple fractions like "1/2"
+    const parts = fractionStr.split('/');
+    if (parts.length === 2) {
+      const numerator = parseFloat(parts[0]);
+      const denominator = parseFloat(parts[1]);
+      if (!isNaN(numerator) && !isNaN(denominator) && denominator !== 0) {
+        return numerator / denominator;
+      }
+    }
+    
+    // Fallback to 0 if parsing fails
+    return 0;
+  };
+
   const getAdjustedIngredient = (ingredient) => {
     // This is a simple implementation that assumes the first number in the string is the quantity
     // In a real app, you'd want a more robust solution
-    const match = ingredient.match(/([\d\/\s]+)\s*(.*)/);
+    const match = ingredient.match(/([\d/\s]+)\s*(.*)/);
     
     if (!match) return ingredient;
     
-    const [_, quantity, name] = match;
+    const [, quantity, name] = match;
     
     try {
       // This is a very basic implementation and might not work with all fraction formats
-      const originalQuantity = eval(quantity.trim()); // Using eval is generally not recommended, but works for this demo
+      // Parse fractions safely without eval
+      const originalQuantity = parseFraction(quantity.trim());
       const adjustedQuantity = (originalQuantity / (recipe.servings || 1)) * servings;
       
       // Format the number to a readable fraction
